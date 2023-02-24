@@ -1,38 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
+  min-width: 100vw;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.home {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainAdminPage {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.addLink {
+  width: 20%;
+  height: 30px;
+  margin: 20px;
+}
+
+.link {
+  width: 130%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link button {
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.notValidLink {
+  color: red;
+}
+
+.userNameSetUp {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.linksList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.linksList li {
+  width: 100%;
+  background-color: #18253e;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 15px;
+  border: 1px solid white;
+  color: white;
+  margin: 5px;
+}
+
+a {
+  text-decoration: initial;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.linksList li:hover {
+  cursor: pointer;
+  background-color: #324e83;
 }
